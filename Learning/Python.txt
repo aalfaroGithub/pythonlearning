@@ -1,0 +1,46 @@
+Extensions
+docstring
+
+To import other files py or mudules, if they are in the same folder
+import filename
+
+If they are inside a folder
+import folder.filename
+
+
+Structure
+Project folder
+    main.py
+    folder
+        othermodule.py
+
+
+Convention PEP-8
+(pep8online.com)
+files, variables, functions and class methods -> snake_case
+Class names -> CamelCase
+2 spaces between functions
+4 spaces for the tabs
+parameters without spaces -> param=''
+
+install new packages 
+pip install packagename==version
+
+Install a development environment 
+inside the project
+Create
+python -m venv env (env environmentName)
+Activate
+env\Scripts\Activate
+Then appears a prefix called (env)
+
+To finish the environment
+inside the project 
+deactivate
+
+To know all the installed dependencies and their version 
+pip freeze
+To create a file with the list of dependencies
+pip freeze > requirements.txt
+To recover dependencies
+pip install -r requirements.txt
